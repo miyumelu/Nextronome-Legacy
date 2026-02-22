@@ -1,0 +1,152 @@
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.vbprojAssemblyReference.cache
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.Form1.resources
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.Resources.resources
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\bin\Debug\Nextronome.exe.config
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\bin\Debug\Nextronome.exe
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\bin\Debug\Nextronome.pdb
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\bin\Debug\Nextronome.xml
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.exe
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.xml
+C:\Users\deniz\AppData\Local\Temporary Projects\Nextronome\obj\Debug\Nextronome.pdb
+E:\Strxm Alpha\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+E:\Strxm Alpha\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+E:\Strxm Alpha\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+E:\Strxm Alpha\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.vbprojAssemblyReference.cache
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+E:\Strxm Alpha\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+E:\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+E:\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+E:\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+E:\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.vbprojAssemblyReference.cache
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+E:\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.MainWindow.resources
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+C:\Users\Acer\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+C:\Users\Acer\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+C:\Users\Acer\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+C:\Users\Acer\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+C:\Users\Acer\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Styleselect.resources
+G:\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+G:\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+G:\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+G:\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.MainWindow.resources
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.Styleselect.resources
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+G:\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+F:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+F:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+F:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+F:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+G:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+G:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+G:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+G:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+G:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form2.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form2.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.BPMValueSetting.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.StartDisplay.resources
+F:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Settings.resources
+E:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+E:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+E:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+E:\files\ACC\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.BPMValueSetting.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Settings.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.StartDisplay.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.Form2.resources
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+E:\files\ACC\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\MaterialSkin.dll
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\MetroFramework.Design.dll
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\MetroFramework.dll
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\deniz\Documents\Nextronome\Nextronome\bin\Debug\ReaLTaiizor.dll
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.exe.config
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.BPMValueSetting.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.Settings.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.StartDisplay.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.Form2.resources
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.Up2Date
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+C:\Users\deniz\Documents\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.exe.config
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.exe
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.pdb
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\Nextronome.xml
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\MaterialSkin.dll
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\MetroFramework.Design.dll
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\MetroFramework.dll
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\bin\Debug\ReaLTaiizor.dll
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.AssemblyReference.cache
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.BPMValueSetting.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Form1.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Resources.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Settings.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.StartDisplay.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.Form2.resources
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.GenerateResource.cache
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.CoreCompileInputs.cache
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj.Up2Date
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.exe
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.xml
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
