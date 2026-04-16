@@ -13,6 +13,8 @@
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.StartPosition = FormStartPosition.Manual
         Me.Location = New Point(0, 55)
+        Me.Height = My.Computer.Screen.Bounds.Height - 55
+        Me.Width = My.Computer.Screen.Bounds.Width
         Me.TopMost = True
 
         If My.Settings.FKey Then

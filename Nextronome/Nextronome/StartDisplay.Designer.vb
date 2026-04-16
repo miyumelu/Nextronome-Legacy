@@ -38,7 +38,7 @@ Partial Class StartDisplay
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(1440, 900)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "KAVN Rhytmos"
+        Me.Label1.Text = "Avean Rhytmos"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Waitress

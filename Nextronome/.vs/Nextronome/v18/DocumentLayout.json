@@ -3,28 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\kaan divrikli\\desktop\\nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\kaan divrikli\\desktop\\nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nextronome||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -35,15 +22,20 @@
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nextronome||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,65 +49,64 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\MainWindow.vb",
-              "RelativeDocumentMoniker": "Nextronome\\MainWindow.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\MainWindow.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\MainWindow.vb [Entwurf]",
+              "DocumentIndex": 4,
+              "Title": "StartDisplay.vb [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb",
+              "RelativeDocumentMoniker": "Nextronome\\StartDisplay.vb",
+              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb [Entwurf]",
+              "RelativeToolTip": "Nextronome\\StartDisplay.vb [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.802Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BPMValueSetting.vb",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb",
-              "RelativeDocumentMoniker": "Nextronome\\BPMValueSetting.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb",
-              "RelativeToolTip": "Nextronome\\BPMValueSetting.vb",
-              "ViewState": "AgIAACEAAAAAAAAAAAD4vzIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:42:30.458Z"
+              "WhenOpened": "2026-03-28T20:05:17.634Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BPMValueSetting.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb",
-              "RelativeDocumentMoniker": "Nextronome\\BPMValueSetting.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\BPMValueSetting.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:42:26.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Settings.vb",
               "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Settings.vb",
               "RelativeDocumentMoniker": "Nextronome\\Settings.vb",
               "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Settings.vb",
               "RelativeToolTip": "Nextronome\\Settings.vb",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.684Z"
+              "WhenOpened": "2026-03-28T19:48:32.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Settings.vb [Entwurf]",
               "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Settings.vb",
               "RelativeDocumentMoniker": "Nextronome\\Settings.vb",
               "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Settings.vb [Entwurf]",
               "RelativeToolTip": "Nextronome\\Settings.vb [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.798Z"
+              "WhenOpened": "2026-03-28T19:42:14.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Styleselect.vb",
+              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
+              "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
+              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
+              "RelativeToolTip": "Nextronome\\Styleselect.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-28T08:02:34.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Styleselect.vb [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
+              "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
+              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb [Entwurf]",
+              "RelativeToolTip": "Nextronome\\Styleselect.vb [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-28T08:02:30.648Z"
             },
             {
               "$type": "Document",
@@ -125,67 +116,43 @@
               "RelativeDocumentMoniker": "Nextronome\\MainWindow.vb",
               "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\MainWindow.vb",
               "RelativeToolTip": "Nextronome\\MainWindow.vb",
-              "ViewState": "AgIAAOgDAAAAAAAAAAArwPEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAANAAAAAAAAAAAAAgwPEEAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.801Z",
+              "WhenOpened": "2026-03-27T21:00:51.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Styleselect.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
-              "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\Styleselect.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Styleselect.vb",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
-              "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Styleselect.vb",
-              "RelativeToolTip": "Nextronome\\Styleselect.vb",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAhwFsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Nextronome",
               "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Nextronome.vbproj",
               "RelativeDocumentMoniker": "Nextronome\\Nextronome.vbproj",
               "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\Nextronome.vbproj",
               "RelativeToolTip": "Nextronome\\Nextronome.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-01T20:51:50.334Z"
+              "WhenOpened": "2026-03-27T20:48:34.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StartDisplay.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb",
-              "RelativeDocumentMoniker": "Nextronome\\StartDisplay.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\StartDisplay.vb [Entwurf]",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.vb [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\MainWindow.vb",
+              "RelativeDocumentMoniker": "Nextronome\\MainWindow.vb",
+              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\MainWindow.vb [Entwurf]",
+              "RelativeToolTip": "Nextronome\\MainWindow.vb [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.903Z"
+              "WhenOpened": "2026-03-27T20:48:27.678Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "StartDisplay.vb",
-              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb",
-              "RelativeDocumentMoniker": "Nextronome\\StartDisplay.vb",
-              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\StartDisplay.vb",
-              "RelativeToolTip": "Nextronome\\StartDisplay.vb",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Title": "BPMValueSetting.vb [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb",
+              "RelativeDocumentMoniker": "Nextronome\\BPMValueSetting.vb",
+              "ToolTip": "C:\\Users\\Kaan Divrikli\\Desktop\\Nextronome\\Nextronome\\BPMValueSetting.vb [Entwurf]",
+              "RelativeToolTip": "Nextronome\\BPMValueSetting.vb [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-22T13:32:19.903Z"
+              "WhenOpened": "2026-03-27T20:48:27.569Z"
             }
           ]
         }

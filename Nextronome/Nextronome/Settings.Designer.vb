@@ -46,7 +46,16 @@ Partial Class Settings
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MetMo.SuspendLayout()
         Me.SysInf.SuspendLayout()
         Me.KeyCon.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -55,6 +64,8 @@ Partial Class Settings
         '
         'HomeButton
         '
+        Me.HomeButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HomeButton.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HomeButton.ForeColor = System.Drawing.Color.White
         Me.HomeButton.Location = New System.Drawing.Point(3, 770)
@@ -76,9 +87,14 @@ Partial Class Settings
         'MetMo
         '
         Me.MetMo.BackColor = System.Drawing.Color.Black
+        Me.MetMo.Controls.Add(Me.Label17)
+        Me.MetMo.Controls.Add(Me.Label18)
+        Me.MetMo.Controls.Add(Me.Label14)
+        Me.MetMo.Controls.Add(Me.Label15)
+        Me.MetMo.Controls.Add(Me.Label16)
         Me.MetMo.Location = New System.Drawing.Point(4, 74)
         Me.MetMo.Name = "MetMo"
-        Me.MetMo.Size = New System.Drawing.Size(1420, 678)
+        Me.MetMo.Size = New System.Drawing.Size(1432, 678)
         Me.MetMo.TabIndex = 5
         Me.MetMo.Text = "Metronome Mode"
         '
@@ -88,7 +104,7 @@ Partial Class Settings
         Me.UpdateFlash.Location = New System.Drawing.Point(4, 74)
         Me.UpdateFlash.Name = "UpdateFlash"
         Me.UpdateFlash.Padding = New System.Windows.Forms.Padding(3)
-        Me.UpdateFlash.Size = New System.Drawing.Size(1420, 678)
+        Me.UpdateFlash.Size = New System.Drawing.Size(1432, 678)
         Me.UpdateFlash.TabIndex = 0
         Me.UpdateFlash.Text = "Update/Flash"
         '
@@ -102,12 +118,13 @@ Partial Class Settings
         Me.SysInf.Controls.Add(Me.Family2_Name)
         Me.SysInf.Location = New System.Drawing.Point(4, 74)
         Me.SysInf.Name = "SysInf"
-        Me.SysInf.Size = New System.Drawing.Size(1420, 678)
+        Me.SysInf.Size = New System.Drawing.Size(1432, 678)
         Me.SysInf.TabIndex = 3
         Me.SysInf.Text = "System Information"
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Adam Medium", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
@@ -115,11 +132,12 @@ Partial Class Settings
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(1440, 40)
         Me.Label4.TabIndex = 10
-        Me.Label4.Text = "KAVN | future to people | 2025"
+        Me.Label4.Text = "Avean Software | 2026"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
@@ -132,6 +150,7 @@ Partial Class Settings
         '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
@@ -139,11 +158,12 @@ Partial Class Settings
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(1440, 35)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Build 1025RTNX"
+        Me.Label2.Text = "Build 0326RTNX"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
@@ -151,11 +171,12 @@ Partial Class Settings
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(1440, 35)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Version 24.10.25"
+        Me.Label1.Text = "Version 28.03.26"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Family2_Name
         '
+        Me.Family2_Name.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Family2_Name.BackColor = System.Drawing.Color.Transparent
         Me.Family2_Name.Font = New System.Drawing.Font("Adam Medium", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Family2_Name.ForeColor = System.Drawing.Color.White
@@ -163,23 +184,27 @@ Partial Class Settings
         Me.Family2_Name.Name = "Family2_Name"
         Me.Family2_Name.Size = New System.Drawing.Size(1440, 70)
         Me.Family2_Name.TabIndex = 6
-        Me.Family2_Name.Text = "KAVN Rhytmos"
+        Me.Family2_Name.Text = "Avean Rhytmos"
         Me.Family2_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'KeyCon
         '
         Me.KeyCon.BackColor = System.Drawing.Color.Black
+        Me.KeyCon.Controls.Add(Me.Label19)
+        Me.KeyCon.Controls.Add(Me.Label20)
+        Me.KeyCon.Controls.Add(Me.Label21)
         Me.KeyCon.Controls.Add(Me.Fkeyswitch)
         Me.KeyCon.Controls.Add(Me.Label6)
         Me.KeyCon.Controls.Add(Me.Label5)
         Me.KeyCon.Location = New System.Drawing.Point(4, 74)
         Me.KeyCon.Name = "KeyCon"
-        Me.KeyCon.Size = New System.Drawing.Size(1420, 678)
+        Me.KeyCon.Size = New System.Drawing.Size(1432, 678)
         Me.KeyCon.TabIndex = 2
         Me.KeyCon.Text = "Keyboard Control"
         '
         'Fkeyswitch
         '
+        Me.Fkeyswitch.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Fkeyswitch.BackColor = System.Drawing.Color.Transparent
         Me.Fkeyswitch.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Fkeyswitch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
@@ -217,6 +242,9 @@ Partial Class Settings
         '
         'TabControl1
         '
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl1.Controls.Add(Me.MetMo)
         Me.TabControl1.Controls.Add(Me.KeyCon)
@@ -225,7 +253,7 @@ Partial Class Settings
         Me.TabControl1.Controls.Add(Me.UpdateFlash)
         Me.TabControl1.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.ItemSize = New System.Drawing.Size(500, 70)
-        Me.TabControl1.Location = New System.Drawing.Point(0, -2)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1440, 756)
@@ -251,6 +279,7 @@ Partial Class Settings
         '
         'Fkeyalternate
         '
+        Me.Fkeyalternate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Fkeyalternate.BackColor = System.Drawing.Color.Transparent
         Me.Fkeyalternate.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Fkeyalternate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
@@ -270,11 +299,12 @@ Partial Class Settings
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(1074, 70)
         Me.Label13.TabIndex = 56
-        Me.Label13.Text = "Alternate"
+        Me.Label13.Text = "Allow Flash"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label10
         '
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
@@ -312,6 +342,7 @@ Partial Class Settings
         '
         'Label7
         '
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
@@ -347,6 +378,105 @@ Partial Class Settings
         Me.Label9.Text = "Lightbulb effect"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label14
+        '
+        Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.Label14.Location = New System.Drawing.Point(1038, 151)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(350, 50)
+        Me.Label14.TabIndex = 55
+        Me.Label14.Text = "Disabled"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(77, 139)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(857, 79)
+        Me.Label15.TabIndex = 54
+        Me.Label15.Text = "Provides audio feedback for every tick made by the metronome."
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label16
+        '
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("SF UI Display Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(29, 19)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(1074, 70)
+        Me.Label16.TabIndex = 53
+        Me.Label16.Text = "Metronome tick"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label17
+        '
+        Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(1038, 267)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(350, 50)
+        Me.Label17.TabIndex = 58
+        Me.Label17.Text = "Disabled"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label18
+        '
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(77, 255)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(857, 79)
+        Me.Label18.TabIndex = 57
+        Me.Label18.Text = "Allow metronome ticking even during style mode"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label19
+        '
+        Me.Label19.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.Label19.Location = New System.Drawing.Point(1038, 409)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(350, 50)
+        Me.Label19.TabIndex = 52
+        Me.Label19.Text = "Disabled"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label20
+        '
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.Font = New System.Drawing.Font("SF UI Display Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(77, 397)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(857, 79)
+        Me.Label20.TabIndex = 51
+        Me.Label20.Text = "Enables dynamic lighting on Logitech keyboards."
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label21
+        '
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
+        Me.Label21.Font = New System.Drawing.Font("SF UI Display Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(29, 277)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(1074, 70)
+        Me.Label21.TabIndex = 50
+        Me.Label21.Text = "Logitech Keyboards"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -362,6 +492,7 @@ Partial Class Settings
         Me.Text = "Settings"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MetMo.ResumeLayout(False)
         Me.SysInf.ResumeLayout(False)
         Me.KeyCon.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
@@ -394,4 +525,12 @@ Partial Class Settings
     Friend WithEvents Label9 As Label
     Friend WithEvents Fkeyalternate As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
 End Class

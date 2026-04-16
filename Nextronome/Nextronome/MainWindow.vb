@@ -1,6 +1,7 @@
 ﻿Imports System.Diagnostics
 Imports System.IO
 Imports System.Media
+Imports System.Runtime.InteropServices
 Imports System.Threading
 
 Public Class Form1
@@ -23,12 +24,13 @@ Public Class Form1
     Private Changemode As String = "Ending"
 
     ' Timing-Variablen
-    Private bpm As Integer = 119
+    Public bpm As Integer = 119
     Private beatsProTakt As Integer = 4
     Private beatCount As Integer = 0
     Private beatInterval As Integer
     Private metronomRunning As Boolean = False
     Private metronomThread As Thread
+    Private metronomMode As Boolean = False
     Private stopMetronome As Boolean = False
 
     ' Zustandsvariablen
@@ -40,35 +42,37 @@ Public Class Form1
     Private outro As Boolean = False
 
     ' Beat-Längen und Tempi
-    Public Intro1beats As Integer = 32
+    Public Intro1beats As Integer
     Public Intro2beats As Integer
     Public Intro3beats As Integer
 
-    Public Main1beats As Integer = 8
-    Public Main2beats As Integer = 16
+    Public Main1beats As Integer
+    Public Main2beats As Integer
     Public Main3beats As Integer
     Public Main4beats As Integer
 
-    Public Auto1beats As Integer = 4
-    Public Auto2beats As Integer = 4
+    Public Auto1beats As Integer
+    Public Auto2beats As Integer
     Public Auto3beats As Integer
     Public Auto4beats As Integer
 
-    Public Outro1beats As Integer = 16
+    Public Outro1beats As Integer
     Public Outro2beats As Integer
     Public Outro3beats As Integer
 
     Public Sub LoadSample()
 
         'Style BPM lesen.
-        If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style) Then
-            Try
-                Dim StyleBPM As Integer = IO.File.ReadAllText("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\bpm.val")
-                bpm = StyleBPM
-                Label8.Text = StyleBPM
-            Catch ex As Exception
+        If Not metronomMode Then
+            If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style) Then
+                Try
+                    Dim StyleBPM As Integer = IO.File.ReadAllText("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\bpm.val")
+                    bpm = StyleBPM
+                    Label8.Text = StyleBPM
+                Catch ex As Exception
 
-            End Try
+                End Try
+            End If
         End If
 
         'Intro Beats lesen.
@@ -77,9 +81,11 @@ Public Class Form1
             Intro1beats = Beats
             Button10.Enabled = True
             IntroLED1.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(60, 0, 80, 100)
         Else
             Button10.Enabled = False
             IntroLED1.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(60, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Intro2") Then
@@ -87,9 +93,11 @@ Public Class Form1
             Intro2beats = Beats
             Button9.Enabled = True
             IntroLED2.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(61, 0, 80, 100)
         Else
             Button9.Enabled = False
             IntroLED2.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(61, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Intro3") Then
@@ -97,9 +105,11 @@ Public Class Form1
             Intro3beats = Beats
             Button8.Enabled = True
             IntroLED3.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(62, 0, 80, 100)
         Else
             Button8.Enabled = False
             IntroLED3.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(62, 50, 50, 50)
         End If
 
         'Main Beats lesen.
@@ -108,9 +118,11 @@ Public Class Form1
             Main1beats = Beats
             Button3.Enabled = True
             MainLED1.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(63, 0, 80, 100)
         Else
             Button3.Enabled = False
             MainLED1.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(63, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Main2") Then
@@ -118,9 +130,11 @@ Public Class Form1
             Main2beats = Beats
             Button4.Enabled = True
             MainLED2.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(64, 0, 80, 100)
         Else
             Button4.Enabled = False
             MainLED2.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(64, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Main3") Then
@@ -128,9 +142,11 @@ Public Class Form1
             Main3beats = Beats
             Button5.Enabled = True
             MainLED3.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(65, 0, 80, 100)
         Else
             Button5.Enabled = False
             MainLED3.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(65, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Main4") Then
@@ -138,9 +154,11 @@ Public Class Form1
             Main4beats = Beats
             Button6.Enabled = True
             MainLED4.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(66, 0, 80, 100)
         Else
             Button6.Enabled = False
             MainLED4.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(66, 50, 50, 50)
         End If
 
         'Fill Beats lesen.
@@ -153,14 +171,12 @@ Public Class Form1
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto2") Then
             Dim Beats As Integer = IO.File.ReadAllText("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto2\beats.val")
             Auto2beats = Beats
-
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto3") Then
             Dim Beats As Integer = IO.File.ReadAllText("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto3\beats.val")
             Auto3beats = Beats
-
-            End If
+        End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto4") Then
             Dim Beats As Integer = IO.File.ReadAllText("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Auto4\beats.val")
@@ -174,9 +190,11 @@ Public Class Form1
             Outro1beats = Beats
             Button11.Enabled = True
             OutroLED1.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(68, 0, 80, 100)
         Else
             Button11.Enabled = False
             OutroLED1.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(68, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Outro2") Then
@@ -184,9 +202,11 @@ Public Class Form1
             Outro2beats = Beats
             Button12.Enabled = True
             OutroLED2.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(87, 0, 80, 100)
         Else
             Button12.Enabled = False
             OutroLED2.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(87, 50, 50, 50)
         End If
 
         If IO.Directory.Exists("C:\KAVN\Applications\Accompaniment\Styles\" + Style + "\Outro3") Then
@@ -194,9 +214,11 @@ Public Class Form1
             Intro3beats = Beats
             Button13.Enabled = True
             OutroLED3.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(88, 0, 80, 100)
         Else
             Button13.Enabled = False
             OutroLED3.BackColor = xdarkgray
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(88, 50, 50, 50)
         End If
 
 
@@ -204,40 +226,78 @@ Public Class Form1
         'Korrektur
         If break Then
             BreakLED.BackColor = xgreen
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(67, 0, 100, 60)
         ElseIf intro Then
-            If intro = 1 Then
+            If selectintro = 1 Then
                 IntroLED1.BackColor = xgreen
-            ElseIf intro = 2 Then
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(60, 0, 100, 60)
+            ElseIf selectintro = 2 Then
                 IntroLED2.BackColor = xgreen
-            ElseIf intro = 3 Then
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(61, 0, 100, 60)
+            ElseIf selectintro = 3 Then
                 IntroLED3.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(62, 0, 100, 60)
             End If
         ElseIf outro Then
-            If outro = 1 Then
+            If selectoutro = 1 Then
                 OutroLED1.BackColor = xgreen
-            ElseIf outro = 2 Then
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(68, 0, 100, 60)
+            ElseIf selectoutro = 2 Then
                 OutroLED2.BackColor = xgreen
-            ElseIf outro = 3 Then
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(87, 0, 100, 60)
+            ElseIf selectoutro = 3 Then
                 OutroLED3.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(88, 0, 100, 60)
             End If
         Else
             If ritim = 1 Then
                 MainLED1.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(63, 0, 100, 60)
             ElseIf ritim = 2 Then
                 MainLED2.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(64, 0, 100, 60)
             ElseIf ritim = 3 Then
                 MainLED3.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(65, 0, 100, 60)
             ElseIf ritim = 4 Then
                 MainLED4.BackColor = xgreen
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(66, 0, 100, 60)
             End If
-            BreakLED.BackColor = xblue
         End If
 
+        If Not break Then
+            BreakLED.BackColor = xblue
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(67, 0, 80, 100)
+        End If
+
+        LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 100, 0, 0)
+        If Changemode = "Direct" Then
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 0, 100, 0)
+        ElseIf Changemode = "Ending" Then
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 100, 70, 0)
+        End If
+
+        If Active = 1 Then
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(337, 50, 50, 50)
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(329, 0, 100, 60)
+        ElseIf Active = 2 Then
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(329, 50, 50, 50)
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(337, 0, 100, 60)
+        End If
     End Sub
 
 
     ' ========== INITIALISIERUNG ==========
     Private Sub MainWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If LogitechGSDK.LogiLedInit() Then
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 100, 70, 0)
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 100, 0, 0)
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(337, 50, 50, 50)
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(329, 0, 100, 60)
+        Else
+            MessageBox.Show("Konnte keine Verbindung zu Logitech G HUB herstellen. Läuft G HUB im Hintergrund?")
+        End If
+
         Try
             If Screen.AllScreens.Length > 1 Then
                 Dim startLocation As New Point((Screen.AllScreens(1).WorkingArea.Left + 0), (Screen.AllScreens(1).WorkingArea.Top + 0))
@@ -402,6 +462,7 @@ Public Class Form1
                       Beat2.BackColor = xdarkgray
                       Beat3.BackColor = xdarkgray
                       Beat4.BackColor = xdarkgray
+                      LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 100, 0, 0)
                       LoadSample()
                       Button1.Text = "Start"
                   End Sub)
@@ -443,14 +504,16 @@ Public Class Form1
 
             ' Audio abspielen (nur bei Beat 1 oder bei Section-Wechsel)
             If beatCount = 1 Then
-                If intro Then
-                    PlayIntro()
-                ElseIf break Then
-                    PlayBreak()
-                ElseIf outro Then
-                    PlayOutro()
-                Else
-                    PlayRitim()
+                If Not metronomMode Then
+                    If intro Then
+                        PlayIntro()
+                    ElseIf break Then
+                        PlayBreak()
+                    ElseIf outro Then
+                        PlayOutro()
+                    Else
+                        PlayRitim()
+                    End If
                 End If
             End If
 
@@ -489,15 +552,19 @@ Public Class Form1
                           Case 1
                               Beat1.BackColor = xorange
                               StartStopLED.BackColor = xorange
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 100, 70, 0)
                           Case 2
                               Beat2.BackColor = xgreen
                               StartStopLED.BackColor = xgreen
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 100, 60)
                           Case 3
                               Beat3.BackColor = xgreen
                               StartStopLED.BackColor = xgreen
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 100, 60)
                           Case 4
                               Beat4.BackColor = xgreen
                               StartStopLED.BackColor = xgreen
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 100, 60)
                       End Select
 
                       ' Timer für das Zurücksetzen starten
@@ -528,15 +595,19 @@ Public Class Form1
                           Case 1
                               Beat1.BackColor = xdarkgray
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 2
                               Beat2.BackColor = xdarkgray
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 3
                               Beat3.BackColor = xdarkgray
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 4
                               Beat4.BackColor = xdarkgray
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                       End Select
 
                       ' Timer aufräumen
@@ -555,12 +626,16 @@ Public Class Form1
                       Select Case beat
                           Case 1
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 2
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 3
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                           Case 4
                               StartStopLED.BackColor = xdarkgray
+                              LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 0, 0, 0)
                       End Select
 
                       ' Timer aufräumen
@@ -695,36 +770,71 @@ Public Class Form1
             currentSection = newSection
         End If
 
-        intro = True
-        selectintro = 1
-        If Changemode = "Direct" Then
-            beatCount = 0
+        If Not intro Then
+            intro = True
+            selectintro = 1
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
+        Else
+            intro = False
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
         End If
-        LoadSample()
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        intro = True
-        selectintro = 2
-        If Changemode = "Direct" Then
-            beatCount = 0
+        If Not intro Then
+            intro = True
+            selectintro = 2
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
+        Else
+            intro = False
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
         End If
-        LoadSample()
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        intro = True
-        selectintro = 3
-        If Changemode = "Direct" Then
-            beatCount = 0
+        If Not intro Then
+            intro = True
+            selectintro = 3
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
+        Else
+            intro = False
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
         End If
-        LoadSample()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        break = True
-        If Changemode = "Direct" Then
-            beatCount = 0
+        outro = False
+        intro = False
+        If Not break Then
+            break = True
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
+        Else
+            break = False
+            If Changemode = "Direct" Then
+                beatCount = 0
+            End If
+            LoadSample()
         End If
         LoadSample()
     End Sub
@@ -765,8 +875,9 @@ Public Class Form1
     End Sub
 
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+        LogitechGSDK.LogiLedShutdown()
         StopMetronom()
-        StartDisplay.Close()
+        Application.Exit()
     End Sub
 
     Private Sub Panel1_Click(sender As Object, e As EventArgs) Handles Style1_Panel.Click
@@ -888,9 +999,11 @@ Public Class Form1
         If Changemode = "Direct" Then
             Changemode_Label.Text = "Ending"
             Changemode = "Ending"
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 100, 70, 0)
         ElseIf Changemode = "Ending" Then
             Changemode_Label.Text = "Direct"
             Changemode = "Direct"
+            LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 0, 100, 0)
         End If
     End Sub
 
@@ -908,39 +1021,78 @@ Public Class Form1
                 If Changemode = "Direct" Then
                     Changemode_Label.Text = "Ending"
                     Changemode = "Ending"
+                    LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 100, 70, 0)
                 ElseIf Changemode = "Ending" Then
                     Changemode_Label.Text = "Direct"
                     Changemode = "Direct"
+                    LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(59, 0, 100, 0)
                 End If
             ElseIf e.KeyCode = Keys.F2 Then
-                intro = True
-                selectintro = 1
-                If Changemode = "Direct" Then
-                    beatCount = 0
+                If Not intro Or intro And Not selectintro = 1 Then
+                    break = False
+                    outro = False
+                    intro = True
+                    selectintro = 1
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                Else
+                    intro = False
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
                 End If
-                LoadSample()
             ElseIf e.KeyCode = Keys.F3 Then
-                intro = True
-                selectintro = 2
-                If Changemode = "Direct" Then
-                    beatCount = 0
+                If Not intro Or intro And Not selectintro = 2 Then
+                    break = False
+                    outro = False
+                    intro = True
+                    selectintro = 2
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                Else
+                    intro = False
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
                 End If
-                LoadSample()
             ElseIf e.KeyCode = Keys.F4 Then
-                intro = True
-                selectintro = 3
-                If Changemode = "Direct" Then
-                    beatCount = 0
+                If Not intro Or intro And Not selectintro = 3 Then
+                    break = False
+                    outro = False
+                    intro = True
+                    selectintro = 3
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                Else
+                    intro = False
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
                 End If
-                LoadSample()
             ElseIf e.KeyCode = Keys.F5 Then
+                break = False
+                outro = False
+                intro = False
                 ResetLEDs()
                 If Changemode = "Direct" Then
                     beatCount = 0
                 End If
                 ritim = 1
+                intro = False
                 LoadSample()
             ElseIf e.KeyCode = Keys.F6 Then
+                break = False
+                outro = False
+                intro = False
                 ResetLEDs()
                 If Changemode = "Direct" Then
                     beatCount = 0
@@ -948,6 +1100,9 @@ Public Class Form1
                 ritim = 2
                 LoadSample()
             ElseIf e.KeyCode = Keys.F7 Then
+                break = False
+                outro = False
+                intro = False
                 ResetLEDs()
                 If Changemode = "Direct" Then
                     beatCount = 0
@@ -955,6 +1110,9 @@ Public Class Form1
                 ritim = 3
                 LoadSample()
             ElseIf e.KeyCode = Keys.F8 Then
+                break = False
+                outro = False
+                intro = False
                 ResetLEDs()
                 If Changemode = "Direct" Then
                     beatCount = 0
@@ -962,107 +1120,125 @@ Public Class Form1
                 ritim = 4
                 LoadSample()
             ElseIf e.KeyCode = Keys.F9 Then
-                break = True
-                If Changemode = "Direct" Then
-                    beatCount = 0
-                End If
-                LoadSample()
-            ElseIf e.KeyCode = Keys.F10 Then
-                outro = True
+                outro = False
                 intro = False
-                selectoutro = 1
-                If Changemode = "Direct" Then
-                    beatCount = 0
-                End If
-                LoadSample()
-            ElseIf e.KeyCode = Keys.F11 Then
-                outro = True
-                intro = False
-                selectoutro = 2
-                If Changemode = "Direct" Then
-                    beatCount = 0
-                End If
-                LoadSample()
-            ElseIf e.KeyCode = Keys.F12 Then
-                outro = True
-                intro = False
-                selectoutro = 3
-                If Changemode = "Direct" Then
-                    beatCount = 0
-                End If
-                LoadSample()
-            ElseIf e.KeyCode = Keys.Escape Then
-                If Not metronomRunning Then
-                    StartMetronom()
-                    Button1.Text = "Stop"
+                If Not break Then
+                    break = True
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
                 Else
-                    StopMetronom()
-                    Button1.Text = "Start"
+                    break = False
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
                 End If
-                'Mechanismus zum wechseln zwischen Style 1 und Style 2
-            ElseIf e.KeyCode = Keys.PageUp Then
-                Active = 1
-                'Panel2 UI Change
-                Style2_Panel.BackgroundImage = My.Resources.BTN_Untoggled
-                Style2_Label.ForeColor = xdarkgray
-                Style2_Name.ForeColor = xdarkgray
-                Family2_Name.ForeColor = xdarkgray
-                BPM2_Label.ForeColor = xdarkgray
-                DataType2_Label.ForeColor = xdarkgray
+            ElseIf e.KeyCode = Keys.F10 Then
+                    outro = True
+                    break = False
+                    intro = False
+                    selectoutro = 1
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                ElseIf e.KeyCode = Keys.F11 Then
+                    outro = True
+                    break = False
+                    intro = False
+                    selectoutro = 2
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                ElseIf e.KeyCode = Keys.F12 Then
+                    outro = True
+                    break = False
+                    intro = False
+                    selectoutro = 3
+                    If Changemode = "Direct" Then
+                        beatCount = 0
+                    End If
+                    LoadSample()
+                ElseIf e.KeyCode = Keys.Escape Then
+                    If Not metronomRunning Then
+                        StartMetronom()
+                        Button1.Text = "Stop"
+                    Else
+                        StopMetronom()
+                    Button1.Text = "Start"
+                    LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(1, 100, 0, 0)
+                End If
+                    'Mechanismus zum wechseln zwischen Style 1 und Style 2
+                ElseIf e.KeyCode = Keys.PageUp Then
+                    Active = 1
+                    'Panel2 UI Change
+                    Style2_Panel.BackgroundImage = My.Resources.BTN_Untoggled
+                    Style2_Label.ForeColor = xdarkgray
+                    Style2_Name.ForeColor = xdarkgray
+                    Family2_Name.ForeColor = xdarkgray
+                    BPM2_Label.ForeColor = xdarkgray
+                    DataType2_Label.ForeColor = xdarkgray
                 Style = Style2_Name.Text
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(337, 50, 50, 50)
                 'Panel1 UI Change
                 Style1_Panel.BackgroundImage = My.Resources.BTN_Toggled
-                Style1_Label.ForeColor = Color.Black
-                Style_Name.ForeColor = xblue
-                Family_Name.ForeColor = xblue
-                BPM_Label.ForeColor = xblue
-                DataType_Label.ForeColor = xblue
+                    Style1_Label.ForeColor = Color.Black
+                    Style_Name.ForeColor = xblue
+                    Family_Name.ForeColor = xblue
+                    BPM_Label.ForeColor = xblue
+                    DataType_Label.ForeColor = xblue
                 Style = Style_Name.Text
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(329, 0, 100, 60)
                 LoadSample()
-                ClearAllAudioBuffers()
-                PreloadAllAudioFiles()
-            ElseIf e.KeyCode = Keys.PageDown Then
-                Active = 2
-                'Panel1 UI Change
-                Style1_Panel.BackgroundImage = My.Resources.BTN_Untoggled
-                Style1_Label.ForeColor = xdarkgray
-                Style_Name.ForeColor = xdarkgray
-                Family_Name.ForeColor = xdarkgray
-                BPM_Label.ForeColor = xdarkgray
+                    ClearAllAudioBuffers()
+                    PreloadAllAudioFiles()
+                ElseIf e.KeyCode = Keys.PageDown Then
+                    Active = 2
+                    'Panel1 UI Change
+                    Style1_Panel.BackgroundImage = My.Resources.BTN_Untoggled
+                    Style1_Label.ForeColor = xdarkgray
+                    Style_Name.ForeColor = xdarkgray
+                    Family_Name.ForeColor = xdarkgray
+                    BPM_Label.ForeColor = xdarkgray
                 DataType_Label.ForeColor = xdarkgray
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(329, 50, 50, 50)
                 'Panel2 UI Change
                 Style2_Panel.BackgroundImage = My.Resources.BTN_Toggled
-                Style2_Label.ForeColor = Color.Black
-                Style2_Name.ForeColor = xblue
-                Family2_Name.ForeColor = xblue
-                BPM2_Label.ForeColor = xblue
-                DataType2_Label.ForeColor = xblue
+                    Style2_Label.ForeColor = Color.Black
+                    Style2_Name.ForeColor = xblue
+                    Family2_Name.ForeColor = xblue
+                    BPM2_Label.ForeColor = xblue
+                    DataType2_Label.ForeColor = xblue
                 Style = Style2_Name.Text
+                LogitechGSDK.LogiLedSetLightingForKeyWithKeyName(337, 0, 100, 60)
                 LoadSample()
-                ClearAllAudioBuffers()
-                PreloadAllAudioFiles()
-            ElseIf e.KeyCode = Keys.ControlKey Then
-                BPMValueSetting.Show()
-            ElseIf e.KeyCode = Keys.Alt Then
-                LightEffect = 1
-            ElseIf e.KeyCode = Keys.D1 Then
-                Rhythmonly_Label.ForeColor = xgreen
-                AutoAssist_Label.ForeColor = xdarkgray
-                AutoPlay_Label.ForeColor = xdarkgray
-                Accompaniment = "Off"
-                LoadSample()
-                ClearAllAudioBuffers()
-                PreloadAllAudioFiles()
-            ElseIf e.KeyCode = Keys.D2 Then
-                Rhythmonly_Label.ForeColor = xdarkgray
-                AutoAssist_Label.ForeColor = xgreen
-                AutoPlay_Label.ForeColor = xdarkgray
-                Accompaniment = "Assist"
-                LoadSample()
-                ClearAllAudioBuffers()
-                PreloadAllAudioFiles()
-            ElseIf e.KeyCode = Keys.D3 Then
-                Rhythmonly_Label.ForeColor = xdarkgray
+                    ClearAllAudioBuffers()
+                    PreloadAllAudioFiles()
+                ElseIf e.KeyCode = Keys.ControlKey Then
+                    BPMValueSetting.Show()
+                ElseIf e.KeyCode = Keys.Alt Then
+                    LightEffect = 1
+                ElseIf e.KeyCode = Keys.D1 Then
+                    Rhythmonly_Label.ForeColor = xgreen
+                    AutoAssist_Label.ForeColor = xdarkgray
+                    AutoPlay_Label.ForeColor = xdarkgray
+                    Accompaniment = "Off"
+                    LoadSample()
+                    ClearAllAudioBuffers()
+                    PreloadAllAudioFiles()
+                ElseIf e.KeyCode = Keys.D2 Then
+                    Rhythmonly_Label.ForeColor = xdarkgray
+                    AutoAssist_Label.ForeColor = xgreen
+                    AutoPlay_Label.ForeColor = xdarkgray
+                    Accompaniment = "Assist"
+                    LoadSample()
+                    ClearAllAudioBuffers()
+                    PreloadAllAudioFiles()
+                ElseIf e.KeyCode = Keys.D3 Then
+                    Rhythmonly_Label.ForeColor = xdarkgray
                 AutoAssist_Label.ForeColor = xdarkgray
                 AutoPlay_Label.ForeColor = xgreen
                 Accompaniment = "Full"
@@ -1075,5 +1251,19 @@ Public Class Form1
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Settings.Show()
+    End Sub
+
+    Private Sub MetronomeModeChange(sender As Object, e As EventArgs) Handles Label12.Click, Label11.Click, Panel3.Click
+        If metronomMode = False Then
+            Label11.Text = "On - Metronome mode"
+            metronomMode = True
+        Else
+            Label11.Text = "Off - Style mode"
+            metronomMode = False
+        End If
+    End Sub
+
+    Private Sub BPMSettingShow(sender As Object, e As EventArgs) Handles Label8.Click, Label10.Click, Panel2.Click
+        BPMSetting.Show()
     End Sub
 End Class

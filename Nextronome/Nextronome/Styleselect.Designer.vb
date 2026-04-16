@@ -23,24 +23,22 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.HomeButton = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.Dance = New System.Windows.Forms.TabPage()
-        Me.Pianist = New System.Windows.Forms.TabPage()
-        Me.World = New System.Windows.Forms.TabPage()
-        Me.ExpansionUser = New System.Windows.Forms.TabPage()
-        Me.iQPlay = New System.Windows.Forms.TabPage()
-        Me.Songs = New System.Windows.Forms.TabPage()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.TabControl1.SuspendLayout()
-        Me.ExpansionUser.SuspendLayout()
+        Me.Songs = New System.Windows.Forms.TabPage()
+        Me.ExpansionUser = New System.Windows.Forms.TabPage()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ExpansionUser.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
         '
         'HomeButton
         '
+        Me.HomeButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HomeButton.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HomeButton.ForeColor = System.Drawing.Color.White
         Me.HomeButton.Location = New System.Drawing.Point(3, 770)
@@ -50,21 +48,9 @@ Partial Class Form2
         Me.HomeButton.Text = "Back"
         Me.HomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ListView1
-        '
-        Me.ListView1.BackColor = System.Drawing.Color.Black
-        Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListView1.Font = New System.Drawing.Font("SF UI Display Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.ForeColor = System.Drawing.Color.White
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(0, 0)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1432, 570)
-        Me.ListView1.TabIndex = 43
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("SF UI Display Light", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -77,6 +63,7 @@ Partial Class Form2
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("SF UI Display Light", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -87,50 +74,25 @@ Partial Class Form2
         Me.Button2.Text = "Set Style 2"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'TabControl1
+        'PictureBox5
         '
-        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
-        Me.TabControl1.Controls.Add(Me.Dance)
-        Me.TabControl1.Controls.Add(Me.Pianist)
-        Me.TabControl1.Controls.Add(Me.World)
-        Me.TabControl1.Controls.Add(Me.ExpansionUser)
-        Me.TabControl1.Controls.Add(Me.iQPlay)
-        Me.TabControl1.Controls.Add(Me.Songs)
-        Me.TabControl1.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.ItemSize = New System.Drawing.Size(500, 70)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1440, 644)
-        Me.TabControl1.TabIndex = 46
+        Me.PictureBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 756)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(1440, 3)
+        Me.PictureBox5.TabIndex = 41
+        Me.PictureBox5.TabStop = False
         '
-        'Dance
+        'Songs
         '
-        Me.Dance.BackColor = System.Drawing.Color.Black
-        Me.Dance.Location = New System.Drawing.Point(4, 74)
-        Me.Dance.Name = "Dance"
-        Me.Dance.Padding = New System.Windows.Forms.Padding(3)
-        Me.Dance.Size = New System.Drawing.Size(1432, 566)
-        Me.Dance.TabIndex = 1
-        Me.Dance.Text = "Dance"
-        '
-        'Pianist
-        '
-        Me.Pianist.BackColor = System.Drawing.Color.Black
-        Me.Pianist.Location = New System.Drawing.Point(4, 74)
-        Me.Pianist.Name = "Pianist"
-        Me.Pianist.Size = New System.Drawing.Size(1432, 566)
-        Me.Pianist.TabIndex = 2
-        Me.Pianist.Text = "Pianist"
-        '
-        'World
-        '
-        Me.World.BackColor = System.Drawing.Color.Black
-        Me.World.Location = New System.Drawing.Point(4, 74)
-        Me.World.Name = "World"
-        Me.World.Size = New System.Drawing.Size(1432, 566)
-        Me.World.TabIndex = 3
-        Me.World.Text = "World"
+        Me.Songs.BackColor = System.Drawing.Color.Black
+        Me.Songs.Location = New System.Drawing.Point(4, 74)
+        Me.Songs.Name = "Songs"
+        Me.Songs.Size = New System.Drawing.Size(1432, 566)
+        Me.Songs.TabIndex = 4
+        Me.Songs.Text = "Songs"
         '
         'ExpansionUser
         '
@@ -143,32 +105,37 @@ Partial Class Form2
         Me.ExpansionUser.Text = "Expansion/User"
         Me.ExpansionUser.UseVisualStyleBackColor = True
         '
-        'iQPlay
+        'ListView1
         '
-        Me.iQPlay.BackColor = System.Drawing.Color.Black
-        Me.iQPlay.Location = New System.Drawing.Point(4, 74)
-        Me.iQPlay.Name = "iQPlay"
-        Me.iQPlay.Size = New System.Drawing.Size(1432, 566)
-        Me.iQPlay.TabIndex = 5
-        Me.iQPlay.Text = "iQPlay"
+        Me.ListView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListView1.BackColor = System.Drawing.Color.Black
+        Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListView1.Font = New System.Drawing.Font("SF UI Display Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView1.ForeColor = System.Drawing.Color.White
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1432, 570)
+        Me.ListView1.TabIndex = 43
+        Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'Songs
+        'TabControl1
         '
-        Me.Songs.BackColor = System.Drawing.Color.Black
-        Me.Songs.Location = New System.Drawing.Point(4, 74)
-        Me.Songs.Name = "Songs"
-        Me.Songs.Size = New System.Drawing.Size(1432, 566)
-        Me.Songs.TabIndex = 4
-        Me.Songs.Text = "Songs"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 754)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(1440, 3)
-        Me.PictureBox5.TabIndex = 41
-        Me.PictureBox5.TabStop = False
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
+        Me.TabControl1.Controls.Add(Me.ExpansionUser)
+        Me.TabControl1.Controls.Add(Me.Songs)
+        Me.TabControl1.Font = New System.Drawing.Font("SF UI Display Light", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl1.ItemSize = New System.Drawing.Size(500, 70)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1440, 644)
+        Me.TabControl1.TabIndex = 46
         '
         'Form2
         '
@@ -185,23 +152,19 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Styleselect"
-        Me.TabControl1.ResumeLayout(False)
-        Me.ExpansionUser.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ExpansionUser.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents HomeButton As Label
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents ListView1 As ListView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents ExpansionUser As TabPage
-    Friend WithEvents Dance As TabPage
-    Friend WithEvents Pianist As TabPage
-    Friend WithEvents World As TabPage
-    Friend WithEvents iQPlay As TabPage
     Friend WithEvents Songs As TabPage
+    Friend WithEvents ExpansionUser As TabPage
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents TabControl1 As TabControl
 End Class

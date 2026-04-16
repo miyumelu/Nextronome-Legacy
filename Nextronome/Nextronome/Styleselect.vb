@@ -19,6 +19,8 @@ Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.StartPosition = FormStartPosition.Manual
         Me.Location = New Point(0, 55)
+        Me.Height = My.Computer.Screen.Bounds.Height - 55
+        Me.Width = My.Computer.Screen.Bounds.Width
         Me.TopMost = True
         ConfigureListView()
         LoadFolders()

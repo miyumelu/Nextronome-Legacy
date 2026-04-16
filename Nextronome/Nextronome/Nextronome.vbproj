@@ -93,12 +93,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BPMSetting.Designer.vb">
+      <DependentUpon>BPMSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BPMSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BPMValueSetting.Designer.vb">
       <DependentUpon>BPMValueSetting.vb</DependentUpon>
     </Compile>
     <Compile Include="BPMValueSetting.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LGT.vb" />
     <Compile Include="MainWindow.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +144,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BPMSetting.resx">
+      <DependentUpon>BPMSetting.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BPMValueSetting.resx">
       <DependentUpon>BPMValueSetting.vb</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-einstellungen-144 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogitechLedEnginesWrapper.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

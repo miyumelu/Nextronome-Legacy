@@ -150,3 +150,4 @@ C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.vbproj
 C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.exe
 C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.xml
 C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.pdb
+C:\Users\Kaan Divrikli\Desktop\Nextronome\Nextronome\obj\Debug\Nextronome.BPMSetting.resources
