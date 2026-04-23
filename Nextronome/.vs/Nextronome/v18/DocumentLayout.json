@@ -3,19 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\deniz\\documents\\github\\nextronome-legacy\\nextronome\\nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\startdisplay.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\deniz\\documents\\github\\nextronome-legacy\\nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\mainwindow.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -23,28 +19,12 @@
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\styleselect.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\deniz\\documents\\github\\nextronome-legacy\\nextronome\\nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\deniz\\documents\\github\\nextronome-legacy\\nextronome\\nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmsetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|c:\\users\\deniz\\documents\\github\\nextronome-legacy\\nextronome\\nextronome\\lgt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\lgt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\lgt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\settings.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{2D152511-D5C7-4232-80B4-F4AD9050C74C}|Nextronome\\Nextronome.vbproj|solutionrelative:nextronome\\bpmvaluesetting.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nextronome||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -61,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,7 +49,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "BPMSetting.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\BPMSetting.vb",
               "RelativeDocumentMoniker": "Nextronome\\BPMSetting.vb",
@@ -82,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "BPMSetting.vb [Entwurf]",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\BPMSetting.vb",
               "RelativeDocumentMoniker": "Nextronome\\BPMSetting.vb",
@@ -94,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "LGT.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\LGT.vb",
               "RelativeDocumentMoniker": "Nextronome\\LGT.vb",
@@ -102,12 +82,11 @@
               "RelativeToolTip": "Nextronome\\LGT.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-04-21T21:48:31.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T21:48:31.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "Settings.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Settings.vb",
               "RelativeDocumentMoniker": "Nextronome\\Settings.vb",
@@ -115,17 +94,16 @@
               "RelativeToolTip": "Nextronome\\Settings.vb",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-28T19:48:32.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T19:48:32.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Styleselect.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Styleselect.vb",
               "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Styleselect.vb",
-              "RelativeToolTip": "Nextronome\\Styleselect.vb",
+              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Styleselect.vb*",
+              "RelativeToolTip": "Nextronome\\Styleselect.vb*",
               "ViewState": "AgIAAEsAAAAAAAAAAAAqwIkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-28T08:02:34.682Z",
@@ -133,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\MainWindow.vb",
               "RelativeDocumentMoniker": "Nextronome\\MainWindow.vb",
@@ -146,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Nextronome",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Nextronome.vbproj",
               "RelativeDocumentMoniker": "Nextronome\\Nextronome.vbproj",
@@ -161,93 +139,12 @@
               "Title": "StartDisplay.vb",
               "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\StartDisplay.vb",
               "RelativeDocumentMoniker": "Nextronome\\StartDisplay.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\StartDisplay.vb*",
-              "RelativeToolTip": "Nextronome\\StartDisplay.vb*",
+              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\StartDisplay.vb",
+              "RelativeToolTip": "Nextronome\\StartDisplay.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-04-21T23:50:14.926Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ae03ea30-7816-444f-929c-e3bf85b66b9d",
-        "Display": 3,
-        "X": 329,
-        "Y": 161,
-        "Width": 1282,
-        "Height": 774,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BPMValueSetting.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\BPMValueSetting.vb",
-              "RelativeDocumentMoniker": "Nextronome\\BPMValueSetting.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\BPMValueSetting.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\BPMValueSetting.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-27T20:48:27.569Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Settings.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Settings.vb",
-              "RelativeDocumentMoniker": "Nextronome\\Settings.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Settings.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\Settings.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-28T19:42:14.046Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Styleselect.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Styleselect.vb",
-              "RelativeDocumentMoniker": "Nextronome\\Styleselect.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\Styleselect.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\Styleselect.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-28T08:02:30.648Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\MainWindow.vb",
-              "RelativeDocumentMoniker": "Nextronome\\MainWindow.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\MainWindow.vb [Entwurf]",
-              "RelativeToolTip": "Nextronome\\MainWindow.vb [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-27T20:48:27.678Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartDisplay.vb [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\StartDisplay.vb",
-              "RelativeDocumentMoniker": "Nextronome\\StartDisplay.vb",
-              "ToolTip": "C:\\Users\\deniz\\Documents\\GitHub\\Nextronome-Legacy\\Nextronome\\Nextronome\\StartDisplay.vb [Entwurf]*",
-              "RelativeToolTip": "Nextronome\\StartDisplay.vb [Entwurf]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-28T20:05:17.634Z",
-              "EditorCaption": " [Entwurf]"
             }
           ]
         }
